@@ -5,6 +5,17 @@ function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if(window.innerWidth <= 960) {
+      setButton(false)
+    } else {
+      setButton(true);
+    }
+  }
+
+  window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -17,8 +28,34 @@ function Navbar() {
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
           </ul>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className="nav-item">
+              <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
+                About Us
+              </Link>
+            </li>
+          </ul>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className="nav-item">
+              <Link to="/get-involved" className="nav-links" onClick={closeMobileMenu}>
+                Get Involved
+              </Link>
+            </li>
+          </ul>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className="nav-item">
+              <Link to="/admission" className="nav-links" onClick={closeMobileMenu}>
+                Admission
+              </Link>
+            </li>
+          </ul>
+          {button && <Button buttonStyle="btn--outline">APPLY</Button>}
         </div>
       </nav>
     </>
