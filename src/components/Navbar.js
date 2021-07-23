@@ -1,8 +1,11 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Button } from './Button.js';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -13,7 +16,7 @@ function Navbar() {
     } else {
       setButton(true);
     }
-  }
+  };
 
   window.addEventListener('resize', showButton);
 
@@ -21,7 +24,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             NES <i className="fab fa-typo3" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -33,29 +36,18 @@ function Navbar() {
                 Home
               </Link>
             </li>
-          </ul>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
               <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
                 About Us
               </Link>
             </li>
-          </ul>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
               <Link to="/get-involved" className="nav-links" onClick={closeMobileMenu}>
                 Get Involved
               </Link>
             </li>
           </ul>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className="nav-item">
-              <Link to="/admission" className="nav-links" onClick={closeMobileMenu}>
-                Admission
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle="btn--outline">APPLY</Button>}
+          {button && <Button buttonStyle="btn--outline">ADMISSION</Button>}
         </div>
       </nav>
     </>
