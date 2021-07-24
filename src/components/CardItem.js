@@ -7,7 +7,7 @@ function CardItem() {
     <li className="cards_item">
       <Link className="cards_item_link">
         <figure className="cards_item_pic-wrap">
-          <img src="/" alt="Travel Image" className="cards_item_img"/>
+          {/* <img src="/" alt="Travel Image" className="cards_item_img"/> */}
         </figure>
       </Link>
     </li>
