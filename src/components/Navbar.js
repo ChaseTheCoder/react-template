@@ -18,7 +18,7 @@ function Navbar() {
     }
   };
 
-  useEffect(() => {
+  useEffect(() => { //hook to allow to render one time and then not agian
     showButton();
   }, []);
 
