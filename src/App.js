@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home}/>
+          <Route path="/react-template/" exact component={Home}/>
         </Switch>
       </Router>
     </div>
