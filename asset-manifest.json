@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ChaseTheCoder/react-template/static/css/main.ed9f5354.chunk.css",
+    "main.js": "/ChaseTheCoder/react-template/static/js/main.fd7dde8f.chunk.js",
+    "main.js.map": "/ChaseTheCoder/react-template/static/js/main.fd7dde8f.chunk.js.map",
+    "runtime-main.js": "/ChaseTheCoder/react-template/static/js/runtime-main.807e2d69.js",
+    "runtime-main.js.map": "/ChaseTheCoder/react-template/static/js/runtime-main.807e2d69.js.map",
+    "static/js/2.7a414cae.chunk.js": "/ChaseTheCoder/react-template/static/js/2.7a414cae.chunk.js",
+    "static/js/2.7a414cae.chunk.js.map": "/ChaseTheCoder/react-template/static/js/2.7a414cae.chunk.js.map",
+    "index.html": "/ChaseTheCoder/react-template/index.html",
+    "static/css/main.ed9f5354.chunk.css.map": "/ChaseTheCoder/react-template/static/css/main.ed9f5354.chunk.css.map",
+    "static/js/2.7a414cae.chunk.js.LICENSE.txt": "/ChaseTheCoder/react-template/static/js/2.7a414cae.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.807e2d69.js",
+    "static/js/2.7a414cae.chunk.js",
+    "static/css/main.ed9f5354.chunk.css",
+    "static/js/main.fd7dde8f.chunk.js"
+  ]
+}
