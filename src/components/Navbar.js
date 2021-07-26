@@ -28,7 +28,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/react-template/" className="navbar-logo" onClick={closeMobileMenu}>
             NES 
             <i className="fab fa-typo3" />
           </Link>
@@ -37,17 +37,17 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/react-template" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/react-template/about-us" className="nav-links" onClick={closeMobileMenu}>
                 About Us
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/get-involved" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/react-template/get-involved" className="nav-links" onClick={closeMobileMenu}>
                 Get Involved
               </Link>
             </li>
