@@ -30,7 +30,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/react-template/" className="navbar-logo" onClick={closeMobileMenu}>
             NES 
-            <i className="fab fa-typo3" />
+            <i class="fas fa-feather-alt" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -42,7 +42,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/react-template/about-us" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/react-template/about" className="nav-links" onClick={closeMobileMenu}>
                 About Us
               </Link>
             </li>
@@ -52,7 +52,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">ADMISSION</Button>}
+          {button && <Button to="/react-template/admission" buttonStyle="btn--outline">ADMISSION</Button>}
         </div>
       </nav>
     </>
