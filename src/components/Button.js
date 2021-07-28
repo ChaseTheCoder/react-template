@@ -22,7 +22,7 @@ export const Button = ({
   : SIZES[0];
 
   return (
-    <Link to="/enroll" className="btn-mobile">
+    <Link to="/react-template/admission" className="btn-mobile">
       <button
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}

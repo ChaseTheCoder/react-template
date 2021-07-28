@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import GetInvolved from './components/pages/GetInvolved';
 import Admission from './components/pages/Admission';
+import Jobs from './components/pages/Jobs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/react-template/about" exact component={About}/>
           <Route path="/react-template/get-involved" exact component={GetInvolved}/>
           <Route path="/react-template/admission" exact component={Admission}/>
+          <Route path="/react-template/jobs" exact component={Jobs}/>
         </Switch>
       </Router>
     </div>

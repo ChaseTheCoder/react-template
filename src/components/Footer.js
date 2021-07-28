@@ -15,10 +15,10 @@ function Footer() {
         </p>
         <div className="input-areas">
           <input 
+            className="footer-input"
             type="email" 
             name="email" 
-            placeholder="email" 
-            className="footerinput" 
+            placeholder="Enter Your Email" 
           />
           <Button buttonStyle="btn--outline">Sign Up</Button>
         </div>
@@ -33,19 +33,23 @@ function Footer() {
             <Link to="/react-template/jobs">Jobs</Link>
           </div>
         </div>
-      </div>
-      <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>Follow Our School</h2>
-            <Link to="https://www.facebook.com/">
-              <i class="fab fa-facebook-f"></i>
-              Facebook
+            <h2>Follow Us</h2>
+            <Link to="/">
+              <i class="fab fa-facebook-square" />  Facebook
             </Link>
-            <Link to="https://www.instagram.com/">Instagram</Link>
-            <Link to="https://www.linkedin.com/">LinkedIn</Link>
+            <Link to="/">
+              <i class="fab fa-instagram" />  Instagram
+            </Link>
+            <Link to="/" className="social-media-icon">
+              <i class="fab fa-linkedin"/>  LinkedIn
+            </Link>
           </div>
         </div>
+      </div>
+      <div className="footer-bottom">
+        <div className="p footer-bottom-text">Website Created by Chase Sheaff</div>
       </div>
     </div>
   )
